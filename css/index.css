@@ -1,0 +1,351 @@
+:root{
+    --header-color:#F7FAFF;
+    --black-button: #282B2D;
+    --green-button: #86BC42;
+    --text-white: #FFFFFF;
+    --celeste: #2A8AE2;
+}
+@media all and (min-width: 0px) {
+    html{
+        scroll-behavior: smooth;
+    }
+    html, body{
+        overflow-x: hidden; 
+    }
+    .nav-link, ul, li, a{
+        padding-left: 0; padding-right: 0;
+    }
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+    header{
+        background-color: var(--header-color);
+    }
+    header div{
+        padding-top: 67px; padding-bottom: 47px;
+        width: 80px;
+    }
+    header h1{
+        padding-bottom: 12px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    header p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.7;
+        padding-bottom: 25px;
+    }
+    .nav-link{
+        padding-right: 0; padding-bottom: 30px;
+    }
+    .nav-link ul{
+        padding-right: 0;padding-left: 0;
+        list-style-type: none;
+    }
+    .nav-link ul li{
+        padding-right: 0;padding-left: 0; margin-bottom: 8px;
+        height: 28px;
+    }
+    .nav-link ul li a{
+        padding-right: 0; padding: 0; padding-top: 3.2px;
+        border-radius: 4px;
+        background-color: var(--green-button);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .nav-link ul li a:hover{
+        background-color: var(--black-button);
+    }
+    header button{
+        margin-bottom: 60px; border-radius: 3px;
+        max-width:155px !important;
+        font-size: 14px; font-weight: 400;
+        height: 48px;
+        border: none;
+        background: linear-gradient(to left, #282B2D 50%, #86BC42 50%) right;
+        background-size: 200%;
+        transition: .3s ease-out;
+    }
+    header button:hover{
+        background-position: left;
+    }
+    header button a, header button a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    header button a:focus{
+        color: #486973;
+    }
+    .galeria-multi div{
+        position: relative;
+        top: 0;
+        transition: top ease 0.3s;    
+    }
+    .galeria-multi div:hover{
+        top: -10px;
+    }
+    .galeria-multi h2{
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 60px; margin-bottom: 50px;
+    }
+    .galeria-multi div img{
+        box-shadow: 1px 1px 5px 2px #CCCCCC;
+    }
+    .galeria-multi div p{
+        padding-top: 21px; padding-bottom: 25px;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+    .galeria-admin{
+        margin-right: 1%; margin-left: 1%;
+    }
+    .galeria-short h2{
+        margin-bottom: 20px;
+    }
+    .galeria-short div{
+        background-color: #2A8AE2;
+        margin-top: 26px; 
+        color: black;
+    }
+    .galeria-short div h3{
+        padding-top: 40px;
+        font-weight: 600;
+    }
+    .galeria-short div p{
+        padding-bottom: 40px;
+        font-weight: 400;
+    }
+    section section div i{ 
+        font-size: 55px;
+    }
+    .icon-gallery{
+        padding-bottom: 70px; padding-top: 22px;
+    }
+    .icon-gallery div{
+        background-color: white;
+        border: solid 0.2px #ECECEC;
+        border-radius: 2px;
+        color: var(--celeste);
+    }
+    .icon-gallery div:hover .child, .icon-gallery div:hover{
+        background-color: var(--celeste);
+        color: white;
+    }
+    .icon-gallery div i{
+        padding-bottom: 0px; padding-top: 25px;
+        font-size: 26px;
+    }
+    .icon-gallery div p{
+        padding-bottom: 25px;
+        color: #5E6973;
+    }
+    .Reviews h2{
+        margin-bottom: 30px;
+    }
+    .Reviews div{
+        margin-bottom: 15px;
+        border: solid 0.2px #E2E2E2;
+        border-radius: 2px;
+        position:static;
+    }
+    .Reviews div p{
+        font-weight: 400; font-size: 13px; text-align: start;
+        font-style: italic;
+        padding-bottom: 15px;
+    }
+    .Reviews div h3{
+        font-size: 16px; text-align: start;
+    }
+    .footer{
+        background-color: #232323;
+        margin-top: 30px;
+    }
+    .footer h2{
+        padding-top: 65px; font-size: 26px;
+    }
+    footer p{
+        font-size: 14px; margin-bottom: 30px;
+        font-weight: 500;
+    }
+    .footer button{
+        border: none; border-radius: 2px;
+        height: 45px;
+        background: linear-gradient(to left, #86BC42 50.1%, white 50%) right;
+        background-size: 200%;
+        transition: .3s ease-out;
+        color: white;
+    }
+    .footer button p{
+        font-weight: 500; margin-top: 4px; margin-bottom: 0px;
+    }
+    .footer button:hover{
+        color: black; background-position: left;
+    }
+}
+
+@media all and (min-width: 768px) {
+    header h1{
+        font-size: 35px;
+    }
+    header div{
+        max-width:265px !important;
+    }
+    header div img{
+        padding-left: 8.5px; padding-right: 8.5px;
+    }
+    header button{
+        margin-bottom: 105px;
+    }
+    .galeria-multi div{
+        margin-left: 26px;
+        margin-right: 26px;
+        margin-bottom: 15px;
+        margin-bottom: 65px;
+    }
+    .galeria-multi .move{
+        margin-right: 52%;
+    }
+    .galeria-admin{
+        margin-right: 4%; margin-left: 4%;
+    }
+    .galeria-short div{
+        margin-bottom: 7px;
+        border: solid 0.2px #ECECEC;
+        border-radius: 2px;
+    }
+    .galeria-short div p{
+        padding-left: 10px; padding-right: 10px;
+        font-size: 14px;
+    }
+    .Reviews div{
+        margin-left: 12px;
+        margin-right: 12px;
+        min-height: 185px !important;
+        max-width: 225px !important;
+    }
+    .Reviews div p{
+        font-size: 14px;
+        line-height: 2;
+    }
+    .Reviews div h3{
+        margin-bottom: 38px;
+    }
+    .Reviews div p,h3{
+        padding-left: 10px;
+    }
+    .footer h2{
+        padding-top: 80px;
+    }
+    .footer button{
+        margin-left: 50%; margin-right: 50%;
+        width: 200px;
+    }
+    .footer h2{
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    header div{
+        padding-top: 90px;
+    }
+    header h1{
+        font-size: 37px;
+    }
+    header p{
+        max-width: 880px !important;
+    }
+    nav ul{
+        max-width: 750px !important;
+    }
+    nav ul li{
+        margin-right: 15px;
+    }
+    .uno{
+        max-width: 120px !important;
+    }
+    .dos{
+        max-width: 80px !important;
+    }
+    .tres{
+        max-width: 80px !important;
+    }
+    .cuatro{
+        margin-right: 5px;
+    }
+    .cinco{
+        max-width: 120px !important;
+    }
+    .seis{
+        max-width: 120px !important;
+    }
+    .galeria-multi{
+        padding-bottom: 50px;
+    }
+    .galeria-multi h2{
+        margin-top: 70px; margin-bottom: 70px;
+        font-size: 28px;
+    }
+    .galeria-multi div{
+        margin-left: 31px;
+        margin-right: 31px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 45px;
+    }
+    .galeria-multi .move{
+        margin-right: 31px;
+    }
+    .galeria-short div{
+        min-height: 290px; max-width: 270px !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .galeria-short div p{
+        font-size: 16px;
+    }
+    .icon-gallery div{
+        min-height:auto;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .icon-gallery .icon{
+        margin-right: 52%;
+    }
+    .Reviews div{
+        margin-left: 12px;
+        margin-right: 12px;
+        min-height: 185px !important;
+        max-width: 300px !important;
+    }
+    .Reviews div p{
+        padding-top: 35px;
+    }
+    .Reviews div p,h3{
+        padding-left: 32px; padding-right: 25px;
+    }
+    .footer h2{
+        margin-left: 50%; margin-right: 50%;
+        width: 45%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .icon-gallery div{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 12% !important;
+    }
+    .icon-gallery .icon{
+        margin-right: 0;
+    }
+    .Reviews div{
+        max-width: 999px !important;
+    }
+    .footer h2{
+        margin-left: 50%; margin-right: 50%;
+        width: 35%;
+    }
+}
